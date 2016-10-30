@@ -23,7 +23,7 @@ public class GunScript : MonoBehaviour
 			{
 				if (bullet) {
 					Instantiate (bullet, bulletSpawn.transform.position, bulletSpawn.transform.rotation);
-
+					this.GetComponent<AudioSource> ().Play ();
 				}
 				waitTilNextFire = 1;
 			}

@@ -35,7 +35,7 @@ public class BulletScript : MonoBehaviour
 			if (hit.collider.tag == "Enemy") 
 			{
 				print ("I'm hit!");
-				hit.transform.GetComponent<EnemyAi>().enemyHealth -= damage;
+				hit.transform.GetComponent<EnemyAi>().takeDamage(damage);
 				if (hit.transform.GetComponent<EnemyAi>().enemyHealth > 0) {
 
 				} else {
